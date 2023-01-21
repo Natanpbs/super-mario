@@ -1,0 +1,94 @@
+html{
+    color: var(--cor-branca);
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'SecularOne';
+    background-color: var(--cor-fundo-primaria);
+}
+
+.carregando {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('../imagens/mario-up.gif') 50% 50% no-repeat var(--cor-fundo-primaria);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--mobile-padding);
+}
+
+header .logo{
+    max-width: 65px;
+    background: none;
+}
+
+header nav{
+    display: flex;
+}
+
+header .links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav li a {
+    color: var(--cor-branca);
+    font-size: 25px;
+    padding: 10px 20px;
+    transition: 0.2s;
+    border-radius: 50px;
+    letter-spacing: 1px;
+}
+
+main{
+    display: flex;
+    min-height: calc(100vh - 132px);
+}
+
+main .hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .hero .informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 50%;
+    transition: 0.2s;
+}
+
+main .hero .descricao{
+    font-family: 'SecularOne';
+    width: 70%;
+    font-size: 20px;
+}
+
+main .hero .botao-trailer{
+    padding: 15px;
+    border-radius: 50px;
+    color: var(--cor-branca);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background: none;
+    border: 1px solid var(--cor-branca);
+
+}
+header nav li a:hover,
+main .hero .botao-trailer:hover{
+    transition: 1s;
+    background: var(--cor-botao-hover);
+}
+
+main .hero img{
+    max-width: 500px;
+    height: auto;
+}
